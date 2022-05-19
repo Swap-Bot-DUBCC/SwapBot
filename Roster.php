@@ -50,8 +50,6 @@ if (!hash_equals($x_slack_signature, $hash_signature)) {
 
 // Prototype for a roster change (?
 
-$user_id = $_POST['user_id'];
-
 $roster = $_POST['text'];
 
 // Check if it's a number and it's between 0 and 16 (both inclusive)
