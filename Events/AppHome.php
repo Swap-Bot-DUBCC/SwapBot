@@ -322,5 +322,5 @@ $result_curl = curl_exec($slack_call); // Store the result, in case there's any 
 curl_close($slack_call);
 mysqli_stmt_close($stmt);
 mysqli_close($conn);
-file_put_contents("AppHome.txt", $result_curl);
+// file_put_contents("AppHome.txt", $result_curl);
 ?>

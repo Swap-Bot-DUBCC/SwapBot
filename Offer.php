@@ -57,7 +57,7 @@ if (mysqli_stmt_affected_rows($stmt_check) === 0) {
 }
 mysqli_stmt_close($stmt_check); // If the check was successful, close the statement and free memory for the next operations
 if (empty($text)) { // Check if any info was introduced. If it wasn't, open a modal
-    include "RequestSwaps/OfferSwap.php";
+    include "Forms/OfferSwap.php";
 
     $slack_call = curl_init($slack_open_dialog);
     curl_setopt($slack_call, CURLOPT_CUSTOMREQUEST, "POST");
