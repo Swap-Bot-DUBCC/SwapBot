@@ -17,5 +17,16 @@ if (mysqli_error($conn)) {
 
 $sql_dump_part_time = "SELECT * FROM Part_Time";
 $result_part_time = mysqli_query($conn, $sql_dump_part_time);
+$part_time_table = [];
+$flexi_table = [];
+while ($row_part_time_dump = mysqli_fetch_assoc($result_part_time)) {
+    if (strpos($row_part_time_dump["Type"], "Part_Time") === 0) {
+        array_push($part_time_table, $row_part_time_dump);
+    } else {
+        array_push($flexi_table, $row_part_time_dump);
+    }
+}
+
+// I now have the entire people who want to ask for either part time or full time; let's filter them
 
 ?>
