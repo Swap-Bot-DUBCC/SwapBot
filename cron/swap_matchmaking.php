@@ -2,12 +2,6 @@
 
 require '../../../etc/Env.php'; // Require the environmental variables file
 
-/* This .php file will be an idea I have had about a swap matchmaking tool.
- * I will have to organize the way to do it
- * Definitely I will have to import from other files a rank comparison tool (switch statement)
- * I'll also have to inherit a shift selector
- */
-
 // Connect to the database
 
 $conn = mysqli_connect($servername, $username, $password, $dbname);
