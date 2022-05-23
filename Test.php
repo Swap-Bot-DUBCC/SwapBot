@@ -94,11 +94,11 @@ switch ($text) {
         mysqli_close($conn);
         switch ($rank) {
             case "JU":
-                include "RequestSwaps/JU_Off.php";
+                include "Forms/JU_Off.php";
                 break;
             case "JU (AH)":
             case "JU (PU)":
-                include "RequestSwaps/JU (PU)_Off.php";
+                include "Forms/JU (PU)_Off.php";
                 break;
             case "PU (TC)":
             case "PU":
@@ -107,7 +107,7 @@ switch ($text) {
             case "PU (LC)":
             case "PU (INS)":
             case "PU (SEP)":
-                include "RequestSwaps/PU_Off.php";
+                include "Forms/PU_Off.php";
                 break;
         }
         break;
@@ -129,11 +129,11 @@ switch ($text) {
         mysqli_close($conn);
         switch ($rank) {
             case "JU":
-                include "RequestSwaps/JU_Shorter.php";
+                include "Forms/JU_Shorter.php";
                 break;
             case "JU (AH)":
             case "JU (PU)":
-                include "RequestSwaps/JU (PU)_Shorter.php";
+                include "Forms/JU (PU)_Shorter.php";
                 break;
             case "PU (TC)":
             case "PU":
@@ -142,7 +142,7 @@ switch ($text) {
             case "PU (LC)":
             case "PU (INS)":
             case "PU (SEP)":
-                include "RequestSwaps/PU_Shorter.php";
+                include "Forms/PU_Shorter.php";
                 break;
         }
         break;
@@ -164,11 +164,11 @@ switch ($text) {
         mysqli_close($conn);
         switch ($rank) {
             case "JU":
-                include "RequestSwaps/JU_Flight.php";
+                include "Forms/JU_Flight.php";
                 break;
             case "JU (AH)":
             case "JU (PU)":
-                include "RequestSwaps/JU (PU)_Flight.php";
+                include "Forms/JU (PU)_Flight.php";
                 break;
             case "PU (TC)":
             case "PU":
@@ -177,7 +177,7 @@ switch ($text) {
             case "PU (LC)":
             case "PU (INS)":
             case "PU (SEP)":
-                include "RequestSwaps/PU_Flight.php";
+                include "Forms/PU_Flight.php";
                 break;
         }
         break;
